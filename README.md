@@ -35,11 +35,9 @@ to create three different layouts to be cohesive to the device used.
 
 
 ##### Solutions/solving the issue:
-The first time I did this project which took me an entire month to understand new concepts to create a more advanced layout. Even then, there were so many errors with how I coded this site that I had to start over again and see what went wrong. Honestly, I am glad that this happens so, that I know what not to do for
-future projects. But, once I completed this project, which took me less than three weeks to complete, on a second try. I was so proud of myself.
+When trying to push my repo I wasnt able to do so even if the name matched with the repo in Github. I realized that I copied and paste push info using the https NOT the ssh. Once I switched to ssh on github, I then went into the terminal, typed ls -ls, then type rm -rf .git (should be in the listing/depending on the laptop brand), then go back into the folder that you want to make a repo....now git init (again), go back to github and copy and paste the ssh push code. You should be able to do the regular add, status, commit, and push after.
 
-1. Try to keep widths 100%
+https://stackoverflow.com/questions/1213430/how-to-fully-delete-a-git-repository-created-with-init
+https://komodor.com/blog/solving-fatal-not-a-git-repository-error/
 
-2. Use margins and paddings with ems and rems NOT pxs.
 
-3. Be mindful with how you use the </div> because it can make a difference
