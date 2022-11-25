@@ -1,10 +1,8 @@
 
-# unplugged-retreat
+# Deanna's Wine Gallery
 
 # Summary 
-This project was all about creating a fully responsive website. This was the third main website from Skillcrush that I had to replicate as assigned. 
-I had to combine everything I learn from flexbox, inserting images, social media icons, maps, and media queries.  Although this website is not
-in detail, surfing through the website gives the audience an idea that the website is about camping and experience nature.
+This project was all about creating a fully responsive website. I wanted to create a wine website that has many popular beverages.
 
 ### Description/ walk-through
 At first glance, the image of a woman will capture your eye. As you scroll down the home page, you will see where you can type in your name to 
@@ -23,7 +21,7 @@ advanced web responsive websites.
 ***** The cool effect is the green hover on the navigattion bar *****
 
 #### Software used:
-Adobe Dreamweaver (text-editor)
+VsCoder (text-editor)
 
 #### What I learn:
 Since I had experience with the basics of HTML and CSS, that was more of a breeze. But, the challenge was fusing flexbox and media queries in order 
