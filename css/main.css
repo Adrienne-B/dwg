@@ -1,0 +1,2038 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: left;
+}
+html, body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;	
+	/*prevents white space from the right side*/
+}
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+		/*	nav ul li a.active, nav ul li a:hover {
+				display: block;
+				margin: 10px 0;
+				padding: 10px;
+			  color: darkgreen;
+			  text-decoration: none;
+			  transition: 0.10s;	
+}*/
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+ 
+h4 {
+  color: #1C1F24;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+ 
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+address {
+ font-style: normal;
+}
+ 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header,
+footer {
+  /* align-items: center;	 */
+  background-color: #202322;
+  display: flex;
+  /* justify-content: center; */
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 8px 0; /*makes the height of the header longer*/
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  z-index: 2;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+		
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav {
+  font-size: 1.125em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;	
+  text-transform: uppercase;
+  width: 60%; /*Made the links have space.*/	
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;	
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+li a {
+	color: white;
+  width: 100%;
+}
+
+/* footer {
+  flex-direction: column;	
+  flex-flow: row wrap;
+  text-align: center;
+} */
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;	
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;	
+  width: 40px;
+  height: 40px;	
+					/*margin-right: 2em;*/
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+	
+}
+footer .copyright {
+  margin: 20px 0;
+}
+
+header li:hover,
+header li:active{
+    background-color: #527158;
+}
+
+				/* -------------------- Mobile Styles - Homepage -------------------- */
+
+
+        nav li{
+          display: none;
+        /* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/
+        }
+        
+        #menu-bar{
+        /* background-color: black; */
+        height: 2rem;
+        margin-left: -1rem;
+        padding-bottom: 1.3rem;
+        width: 107%;
+        }	
+        
+        #nav {
+        padding-left: 14rem;
+        padding-bottom: 2rem;
+        margin-right: 0.08rem;
+        }	
+        
+        #nav li {
+         font-size: 1.8rem;
+        margin-right: -55rem;
+         /* padding-top: 4rem; */
+         padding-top: 5.3rem;
+         
+        }
+        
+        
+        
+        
+        
+        
+        header li a:hover,
+        header li:active {
+          background: rgba(0, 0, 0, 0.6);
+          /*  background-color: #527158;*/
+          /* color: greenyellow; */
+          color: #E270A4;
+          padding: 1.2rem;
+        }
+        
+        
+        
+        
+        
+        
+        .contact, .contact-container i:hover,
+        .contact, .contact-container i:active {
+            transform:scale(1.3);	
+        }
+        
+        .contact, .Graphics_email i:hover,
+        .contact, .Graphics_email i:active {
+            transform:scale(1.3);	
+        }
+        
+                /* -------------------- Mobile Styles - Homepage -------------------- */
+        
+        /* Hero Area */
+ nav ul{
+  margin-left: -47px;
+}
+
+.logo img {
+  width: 15%;
+  position: relative;
+  left: 1rem;
+  top: -1.8rem;
+}
+
+/* Hero Area */
+
+
+
+.overlay {
+  min-height: 32rem;
+  min-width: 91rem;
+  background-size: cover;
+  width: 77rem;
+  position: relative;
+  left: -5rem;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+
+.business_logo {
+  max-width: 10rem;
+  position: relative;
+  left: 11rem;
+  top: 8rem;
+}
+
+.subtitle  {
+  position: relative;
+  left: 7.4rem;
+  top: 11rem;
+  width:19%;
+  text-align: center;
+}
+
+.hero-area {
+  background: url("../css/img/cover.jpg");
+  background-position: center;	
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  min-height: 500px;	
+}
+
+.hero-area .content-wrapper {
+  /* position: relative;
+  top: 7rem; */
+  margin-top: 3rem;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-size: 2.25em;	
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+
+.wine_collection {
+  width: 123%;
+  position: relative;
+  left: -1.5rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+/* Aside */
+
+/* aside {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside .form{
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  width: 100%;	
+}
+
+input[type=button] {
+  color: #e2e3ed;
+  background-color: #2a423a;	
+  border: none;	
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;	
+  margin-top: 20px;	
+  padding: 20px 0;	
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;  
+} */
+
+
+.info {
+  /* background-color: #2a423a; */
+  background-color: #fff;
+  margin-top: -6.2rem;
+}
+
+/* .info h2 {
+  margin-bottom: 40px;
+  line-height: 1.3;
+  width: 70%;
+} */
+
+ .info_desc h3 {
+  width: 178%;
+  margin: 20px 0;
+  font-size: 21px;
+}
+/* .info p{
+	font-size: 0.62em;
+	width: 89%;
+} */
+
+.info_desc{
+  background-color: #fff;
+  color: #000;
+  width: 20rem;
+  position: relative;
+  left: 1.0rem;
+  top: -4rem;
+  bottom: 4rem;
+  height: 19rem;
+}
+
+.info_desc h3 {
+  font-size: 20px;
+  position: relative;
+  color: #000;
+  width: 19rem;
+  position: relative;
+  left: 6.5rem;
+  top: 3rem;
+}
+
+.info_desc p {
+  position: relative;
+  color: #4A4E4F;
+  width: 18rem;
+  position: relative;
+  left: 2.7rem;
+  top: 3rem;
+  line-height: 1.4rem;
+  /* text-align: center; */
+}
+
+/* FEATURES */
+
+.features {
+  /* background: url("../img/rawpixel-800820-unsplash1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+  width: 72%; 															/*didnt have this on the original, why*/
+}
+.features article {
+  width: 90%;
+  margin: 30px 20px; /*It was 0 but I had to put it 20px in order for it to center*/
+}
+
+.features .features-items {
+ /* background: url("../img/omar-lopez-296944-unsplash.jpg"); I put this in the wrong section*/
+  align-items: center;	
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* .fontawesome-icon i {
+	font-size: 2.7em;
+	margin-bottom: 40px;
+	margin-top: 34px;
+} */
+
+.features p {
+  font-size: 1.4em;
+  margin: 0;
+  text-align: center;
+  color: #4A4E4F;
+  word-wrap: break-word;
+  width: 95%;
+	
+}
+
+.overlay_ww {
+    min-height: 16rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    position: relative;
+    left: -5rem;
+    top: 0rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.white_wine_banner {
+  height: 30vh;
+  position: relative;
+  top: 1rem;
+  background-image: url("../css/img/white_wine_banner.png");
+}
+
+.white_wine_banner h2 {
+  position: relative;
+  left: 0.2rem;
+  position: relative;
+  top: 5rem;
+  font-size: 50px;
+  left: 8rem;
+  margin-top: -1rem;
+ }
+
+.ww1 {
+  width: 55%;
+  position: relative;
+  left: 3.7rem;
+}
+
+.ww1 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 1rem;
+}
+
+.ww2 {
+  position: relative;
+  height: 41vh;
+  top: -2.3rem;
+  left: 3rem;
+  width: 54%;;
+} 
+
+.ww2 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2.2rem;
+  top: -30px;
+}
+
+.ww3 {
+  position: relative;
+  height: 41vh;
+  top: -1.7rem;
+  left: 3.4rem;
+  width: 54%;;
+} 
+
+.ww3 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 3rem;
+  top: -30px;
+}
+
+.ww4 {
+  position: relative;
+  height: 41vh;
+  top: -1.3rem;
+  left: 3rem;
+  width: 58%;;
+} 
+
+.ww4 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2.4rem;
+  top: -34px;
+}
+
+.ww5 {
+  position: relative;
+  height: 41vh;
+  top: -1.3rem;
+  left: 2rem;
+  width: 77%;;
+} 
+
+.ww5 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 0.4rem;
+  top: -48px;
+}
+
+.ww6 {
+  position: relative;
+  height: 31vh;
+  top: -3rem;
+  left: 3.6rem;
+  width: 52%;;
+} 
+
+.ww6 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 3rem;
+  top: -31px;
+}
+
+.ww7 {
+  position: relative;
+  height: 41vh;
+  top: -0.5rem;
+  left: 2rem;
+  width: 79%;;
+} 
+
+.ww7 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 3rem;
+  top: -31px;
+}
+
+.ww8 {
+  position: relative;
+  height: 41vh;
+  top: -0.5rem;
+  left: 3.4rem;
+  width: 59%;;
+} 
+
+.ww8 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2rem;
+  /* top: -91px; */
+  top: -72px;
+}
+
+.rose_wine_banner {
+  height: 30vh;
+  position: relative;
+  top: 1rem;
+  background-image: url("../css/img/rose_wine_banner.png");
+}
+
+.overlay_rr {
+  /* height: 30vh;
+  position: relative;
+  top: 0rem;
+  left: 2rem; */
+
+    min-height: 16rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    position: relative;
+    left: -5rem;
+    top: 0rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.rose_wine_banner h2 {
+ position: relative;
+ left: 0.2rem;
+ position: relative;
+ top: 5rem;
+ font-size: 50px;
+ left: 8rem;
+ margin-top: -1rem;
+}
+
+.rw1 {
+  width: 85%;
+  position: relative;
+  left: 1.3rem;
+}
+
+.rw1 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2rem;
+  top: -2.02rem;
+}
+
+/* .rw1 .features-item-description {
+  position: relative;
+  left: 2rem;
+  top: -1.5rem;
+} */
+
+.rw2 {
+  position: relative;
+  height: 42vh;
+  top: -1.3rem;
+  left: 3.2rem;
+  width: 59%;;
+} 
+
+.rw2 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 3rem;
+  top: -1rem;
+}
+
+.rw3 {
+  position: relative;
+  height: 41vh;
+  top: -0.7rem;
+  left: 2.8rem;
+  width: 65%;;
+} 
+
+.rw3 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2rem;
+  top: -3rem;
+}
+
+.rw4 {
+  position: relative;
+  height: 41vh;
+  top: -1.3rem;
+  left: 3rem;
+  width: 70%;;
+} 
+
+.rw4 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 167%;
+  position: relative;
+  left: 2rem;
+  top: -2rem;
+}
+
+.red_wine_banner {
+  height: 30vh;
+  position: relative;
+  top: 1rem;
+  background-image: url("../css/img/red_wine_banner.png");
+}
+
+.overlay_rdw {
+  height: 30vh;
+  position: relative;
+  top: 0rem;
+  left: 2rem;
+}
+
+.red_wine_banner h2 {
+ position: relative;
+ left: 5rem;
+ position: relative;
+ top: 5rem;
+ font-size: 50px;
+ left: 3rem;
+ margin-top: -1rem;
+}
+
+.rdw1 {
+  width: 53%;
+  position: relative;
+  left: 3rem;
+}
+
+.rdw1 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 1rem;
+  top: -0.1rem;
+  width: 134%;
+}
+
+#sainte_description  {
+  position: relative;
+  top: -0rem;
+}
+
+.rdw2 {
+  width: 72%;
+  position: relative;
+  left: 2.4rem;
+  top: 1rem;
+}
+
+.rdw2 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 4rem;
+  top: -1rem;
+  width: 134%;
+}
+
+.rdw3 {
+  width: 82%;
+  position: relative;
+  left: 1.30rem;
+}
+
+.rdw3 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 2.7rem;
+  top: 0rem;
+  width: 24rem;
+}
+
+.rdw4 {
+  width: 100%;
+  position: relative;
+  left: -0.1rem;
+}
+
+.rdw4 h4 {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 4.9rem;
+  top: 0rem;
+  width: 134%;
+}
+
+.rdw5 {
+  width: 22%;
+  position: relative;
+  left: 3.6rem;
+}
+/* REVIEWS */
+
+.reviews {
+  background-image: url("../css/img/parallax_background.png");
+  /* background-color: #2a423a; */
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1.3;
+  width: 70%;
+}
+
+.description {
+  background-color: #fff;
+  width: 93%;
+  position: relative;
+  left: 1rem;
+  top: -6rem;
+  height: 35vh;
+}
+
+ .reviews h3 {
+  width: 178%;
+  margin: 20px 0;
+  color: #BA9A6B;
+  position: relative;
+  left: 8rem;
+  top: 2rem;
+}
+.reviews p{
+	font-size: 16px;
+	width: 89%;
+  color: #BA9A6B;
+  text-align: center;
+  margin-top: 3rem;
+  word-break: break-all;
+  width: 81%;
+  left: 1.7rem;
+  position: relative;
+}
+
+footer {
+  flex-direction: column;	
+  /* flex-flow: row wrap; */
+  text-align: center;
+}
+
+
+/*******END OF CELLULAR SIZE FOR HOME, FAQ, & ABOUT PAGES**********/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/*
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  /* .content-wrapper { */
+    /* max-width: 640px; /*
+    margin: 100px 0; */
+    /*Messed up the lining of the desktop*/
+  /* } */
+      
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
+  /* Header */
+  header {
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
+  }
+
+  header nav {
+    width: 26%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+
+  /* HERO AREA */
+
+  .hero-area {
+    min-height: 600px;
+  }
+  
+.logo img {
+  width: 10%;
+  position: relative;
+  left: 1rem;
+  top: -1.8rem;
+}
+
+.overlay {
+  min-height: 32rem;
+  min-width: 91rem;
+  background-size: cover;
+  width: 77rem;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+/* Hero Area */
+.business_logo {
+  max-width: 12rem;
+  position: relative;
+  left: 43.6rem;
+  top: 10rem; 
+}
+
+.subtitle  {
+  position: relative;
+  left: 37rem;
+  top: 12rem;
+  width:30%;
+  text-align: center;
+}
+
+.wine_collection {
+  width: 89%;
+  position: relative;
+  left: 4.5rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.info .content-wrapper{
+  margin-top: 3rem;
+}
+
+.info_desc h3 {
+  font-size: 34px;
+  width: 19rem;
+  position: relative;
+  left: 12.5rem;
+  top: 3rem;
+}
+
+.info_desc p {
+  font-size: 26px;
+  width: 30rem;
+  position: relative;
+  left: 8.5rem;
+  top: 3rem;
+  line-height: 2.4rem;
+  margin-bottom: 13rem;
+}
+
+.overlay_ww {
+  /* height: 30vh;
+  position: relative;
+  top: 0rem;
+  left: 2rem; */
+
+    min-height: 15.3rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    position: relative;
+    left: -5rem;
+    top: 0rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.white_wine_banner {
+  height: 24vh;
+  position: relative;
+  top: 13rem;
+  margin-bottom: 20rem;
+}
+
+.white_wine_banner h2 {
+  position: relative;
+  left: 13rem;
+  font-size: 4rem;
+}
+
+.ww1 {
+  position: relative;
+  left: 2.7rem;
+  /* top: 1rem; */
+  width: 58%;
+}
+
+.ww2 {
+  height: 30vh;
+}
+
+.ww3 {
+  height: 31vh;
+}
+
+.ww3 {
+  height: 32vh;
+}
+
+.ww4 {
+  height: 34vh;
+  width: 63%;
+}
+
+.ww5 {
+  height: 34vh;
+  width: 85%;
+}
+
+.ww6 {
+  height: 28vh;
+  width: 63%;
+  top: -2rem;
+}
+
+.ww7 {
+  height: 31vh;
+  width: 82%;
+}
+
+.ww8 {
+  position: relative;
+  top: -20px;
+  height: 32vh;
+}
+
+.ww8 h4 {
+  position: relative;
+  top: -61px;
+}
+
+.overlay_rr {
+  /* height: 30vh;
+  position: relative;
+  top: 0rem;
+  left: 2rem; */
+
+    min-height: 15.3rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    position: relative;
+    left: -5rem;
+    top: 0rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.rose_wine_banner {
+  height: 24vh;
+  position: relative;
+  top: 13rem;
+  margin-bottom: 23rem;
+}
+
+.rose_wine_banner h2 {
+  position: relative;
+  left: 18rem;
+  font-size: 4rem;
+}
+
+.rw1 {
+  height: 35vh;
+  position: relative;
+  top: -1rem;
+}
+
+.rw1 h4 {
+  height: 35vh;
+  position: relative;
+  top: -3.02rem;
+}
+
+.rw2 {
+  height: 33vh;
+}
+
+.rw2 h4 {
+  position: relative;
+  top: -2rem;
+}
+
+.rw3 {
+  height: 34vh;
+}
+
+.rw4 {
+  height: 34vh;
+}
+
+.red_wine_banner {
+  height: 24vh;
+  position: relative;
+  top: 13rem;
+  margin-bottom: 20rem;
+}
+
+.red_wine_banner h2 {
+  position: relative;
+  left: 13rem;
+  font-size: 4rem;
+}
+
+.rdw2 {
+  position: relative;
+  top: -0.6rem;
+  width: 55%;
+}
+
+.rdw3 {
+  position: relative;
+  left: 2rem;
+  width: 66%;
+  top: 0rem;
+}
+
+.rdw3 .features-item-description{
+  position: relative;
+  left: 3rem;
+  width: 53%;
+}
+
+.rdw4 {
+  position: relative;
+  left: -1.1rem;
+  top: 0rem;
+  width: 105%;
+}
+
+.rdw4 h4{
+  position: relative;
+  left: 5.9rem;
+  top: 1rem;
+  width: 105%;
+}
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+	
+	
+  /* FEATURES */
+
+.features h2 {
+    margin-bottom: 20px;
+	width: 99%;
+ }
+	
+.features /*.content-font*/{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+	
+.features article {
+    flex-basis: 43%;
+}
+/* 	
+ .features article i {
+	margin-bottom: 30px;
+	width: 33%;  							  
+}
+	 */
+.features p{
+	font-size: 1.134em;
+	overflow-wrap: break-word;
+	width: 95%;
+
+}
+
+	
+  /* REVIEWS */
+.reviews {
+  background-repeat: no-repeat;
+  background-position: center;	
+  background-size: cover;
+}
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .picture {
+    /* position: relative; */
+    margin-left: 0rem;
+    top: 1rem;
+    height: 36vh;
+  }
+
+.reviews .description {
+  width: 116%;
+  position: relative;
+  left: -4rem;
+  top: 3rem;
+  height: 30vh;
+}
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    /*width: 75%;*/
+    margin: 0;
+  }
+	
+.reviews p{
+	width: 75%;
+  position: relative;
+  left: 3.2rem;
+}	
+	
+  /* FOOTER */
+ footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .reviews .picture_card img {
+    height: 4vh;
+  }
+
+  footer .footer-content {
+    display: flex;
+	  /* flex-direction: row;  */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	  width: 100%;
+    position: relative;
+    left: 9rem;
+    top: -3rem;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+ }
+
+ footer p {
+      line-height: 1.285;
+}	
+footer .social-icons {
+	display: flex;
+	width: 12.5em;
+	justify-content: space-between;
+ }
+  
+ footer .copyright {
+    width: 100%;
+ }
+
+	
+	
+
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
+/* 
+ header {
+    padding: 15px 0;
+    position: relative;
+ }
+
+ .content-wrapper {
+    max-width: 960px;
+}
+
+
+.logo img {
+  width: 5%;
+  position: relative;
+  left: 2rem;
+  top: -4.8rem;
+}
+
+
+nav ul li {
+  position: relative;
+  left: 9rem;
+}
+
+
+ #nav_button{
+  /* border-radius: 25px;
+  border: 6px solid #fff; */
+  /* padding: 9px;
+  width: 8rem;
+  height: 20px;
+  margin-left: 7rem;
+}  */
+
+#nav_button  ul{
+  margin-left: 1.4rem;
+  word-wrap: break-word;
+  width: 100%;
+} 
+
+
+#nav_button  a{
+  margin-left: 1.4rem;
+  word-wrap: break-word;
+  width: 100%;
+} 
+
+#menu-bar{
+		display: none;
+	/* put hamburger nav link that is for mobile and tablet as none so that it wont show in  desktop nav*/
+}
+	
+header, span{
+	font-size: 26px;
+	padding-left: 5px;
+}
+
+.Logo img {
+  /* width: 14.7vh; */
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 7px;
+  left: -14rem;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+  position: relative;
+  left: 13rem;
+}
+	
+header nav ul li {
+	/* font-family: 'Cormorant SC', serif; */	
+  font-family: 'Domine', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 15px 18px;
+	display: inline;
+}	
+
+
+
+
+  /* HERO */
+.overlay {
+    min-height: 40rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  }
+  
+  .logo img {
+    width: 5%;
+    position: relative;
+    left: 3rem;
+    top: -4.8rem;
+  }
+
+  .business_logo {
+    position: relative;
+    /* left: 14rem;
+    top: 3rem; */
+    left: 43rem;
+    top: 11rem;
+  }
+  
+  .subtitle {
+    position: relative;
+    left: 34rem;
+    word-wrap: break-word;
+    width: 32%;
+    top: 15rem;
+  }
+
+  .hero-area {
+    min-height: 718px;
+  }
+
+ .hero-area h1 {
+    font-size: 3.75em;
+	 margin-top: -20rem;
+	 margin-left: -18rem;
+    width: 80%;
+  }
+
+  .wine_collection {
+    width: 82%;
+    position: relative;
+    left: -11rem;
+    top: 1rem;
+  }
+
+  .info_desc h3 {
+    font-size: 26px;
+    width: 19rem;
+    left: 36.5rem;
+    top: -20rem;
+  }
+
+  .info_desc p {
+    width: 28rem;
+    left: 28.5rem;
+    top: -20rem;
+    font-size: 21px;
+    line-height: 1.5rem;
+  }
+  
+
+  .overlay_ww {
+    /* height: 30vh;
+    position: relative;
+    top: 0rem;
+    left: 2rem; */
+  
+      min-height: 17.4rem;
+      min-width: 91rem;
+      background-size: cover;
+      width: 77rem;
+      position: relative;
+      left: -5rem;
+      top: 0rem;
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  }
+
+  .white_wine_banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 40vh;
+    position: relative;
+    top: -15rem;
+    margin-bottom: -9rem;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    /* background-size: cover; */
+  }
+  
+  .white_wine_banner h2 {
+    position: relative;
+    left: 33rem;
+    font-size: 4rem;
+    bottom: -22rem;
+  }
+
+  .ww1 {
+    position: relative;
+    top: -1rem;
+  }
+
+.ww1 h4 {
+  width: 181%;
+}
+
+.ww2 {
+  position: relative;
+  top: -2rem;
+}
+
+.ww3 {
+  position: relative;
+  top: -2.7rem;
+}
+
+.ww4 {
+  position: relative;
+  top: -2.3rem;
+}
+
+.ww6 {
+  position: relative;
+  top: -1.5rem;
+  left: 2.6rem;
+}
+
+.ww7 {
+  position: relative;
+  top: -1.5rem;
+  left: 2rem;
+}
+
+.ww7 h4 {
+  position: relative;
+  top: -37px;
+}
+
+.ww8 {
+  position: relative;
+  top: -39px;
+} 
+
+.ww8 h4 {
+  position: relative;
+  top: -37px;
+} 
+
+.ww5 p {
+  word-wrap: break-word;
+  width: 77%;
+}
+
+
+.overlay_rr {
+  /* height: 30vh;
+  position: relative;
+  top: 0rem;
+  left: 2rem; */
+
+    min-height: 17.4rem;
+    min-width: 91rem;
+    background-size: cover;
+    width: 77rem;
+    position: relative;
+    left: -5rem;
+    top: 0rem;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+  .rose_wine_banner {
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    top: -15rem;
+    margin-bottom: -9rem;
+    margin-top: 18rem;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    /* background-size: cover; */
+  }
+  
+  .rose_wine_banner h2 {
+    position: relative;
+    left: 32rem;
+    font-size: 4rem;
+    bottom: -22rem;
+  }
+
+
+  .red_wine_banner {
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    top: -15rem;
+    margin-top: 22rem;
+    margin-bottom: -12rem;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    /* background-size: cover; */
+  }
+  
+  .red_wine_banner h2 {
+    position: relative;
+    left: 27rem;
+    font-size: 4rem;
+    bottom: -22rem;
+  }
+
+  .rwd1 {
+    position: relative;
+    left: -1rem;
+  }
+
+  .rwd1 h4 {
+    font-size: 20px;
+    word-wrap: break-word;
+    width: 88%;
+  }
+
+
+  .rdw2 {
+    position: relative;
+    left: -1rem;
+    width: 29%;
+  }
+  
+  .rdw3 {
+    position: relative;
+    left: -1rem;
+    width: 29%;
+  }
+  /* ASIDE */
+ .info .content-wrapper {
+    justify-content: space-around;
+ }
+
+ .info .content-wrapper .form-description,
+  .info .content-wrapper .form {
+    width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /* FEATURES */
+
+
+  .content-wrapper {
+    margin-left: 34px;
+  }
+
+.features .features-items{
+	display: flex;
+	/* justify-content: center;
+	align-items: center; */
+	flex-flow: row wrap;
+}	
+	
+.features-items{
+	width: 45%;
+}
+	
+ .features h2 {
+    width: 90%;
+ }
+
+ .features article {
+   /* flex-basis: 23%; */
+   flex-basis: 20%;
+}
+
+.features p {
+  width: 131%;
+  column-gap: 5rem;
+  padding: 0 34px;
+}
+  
+  /* REVIEWS */
+
+  
+.reviews article div {
+	/* width: 42%; */
+  width: 22%;
+} /*is in the original but what is it for?*/
+	
+ .reviews h2 {
+    padding-bottom: 50px; 
+	 margin-left: 49px;
+	/*margin-left: -140px; /*Towards the ending of this project the review title wasn't align w/ the picture,  put left px*/
+}
+  
+ .reviews article div {
+    width: 42%;
+ }
+	
+.reviews h3 {
+    position: relative;
+    left: 10.2rem;
+    font-size: 26px;
+}
+	.reviews img{
+		margin-left: 91px;
+		width: 104%;
+    height: 47vh;
+	}	
+	
+ .reviews article  p {
+    width: 82%;
+    position: relative;
+    left: 2.2rem;
+}
+	
+.reviews  .description {
+ position: relative;
+ left: -4rem;
+ height: 38vh;
+ width: 91%;
+}
+
+
+footer  .address{
+  display: flex;
+}
+
+.footer-content {
+  flex-basis: 18%;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+ footer h4 {
+    font-size: 1.875em;
+}
+
+
+
+
+
+	
+	
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+  /* .map figure { */
+   /* padding-bottom: 37.5%;*/ 
+/* }
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+     width: 95%;
+     font-size: 3em;
+}
+
+.contact-content h4 {
+    font-size: 1.875em;
+  }
+
+	
+	 */
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+ /* .faq h2 {
+    width: 100%;
+    font-size: 3em;
+}
+    
+.faq h4,
+.faq p {
+     font-size: 1.125em;
+     line-height: 1;
+  }
+} */
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
