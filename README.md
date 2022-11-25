@@ -29,11 +29,13 @@ to create three different layouts to be cohesive to the device used.
 
 ##### Challenges to improve on
 1. Flexbox is a challenge which I need to work on more.
-2. Margins and Paddings
 
+
+#### Random Unexpected Challenges:
+When trying to push my repo I wasnt able to do so even if the name matched with the repo in Github. I realized that I copied and paste push info using the https NOT the ssh. Once I switched to ssh on github, I then went into the terminal, typed ls -ls, then type rm -rf .git (should be in the listing/depending on the laptop brand), then go back into the folder that you want to make a repo....now git init (again), go back to github and copy and paste the ssh push code. You should be able to do the regular add, status, commit, and push after.
 
 ##### Solutions/solving the issue:
-When trying to push my repo I wasnt able to do so even if the name matched with the repo in Github. I realized that I copied and paste push info using the https NOT the ssh. Once I switched to ssh on github, I then went into the terminal, typed ls -ls, then type rm -rf .git (should be in the listing/depending on the laptop brand), then go back into the folder that you want to make a repo....now git init (again), go back to github and copy and paste the ssh push code. You should be able to do the regular add, status, commit, and push after.
+
 
 https://stackoverflow.com/questions/1213430/how-to-fully-delete-a-git-repository-created-with-init
 https://komodor.com/blog/solving-fatal-not-a-git-repository-error/
